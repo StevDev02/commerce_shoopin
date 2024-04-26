@@ -1,0 +1,17 @@
+* {
+
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.img_header {
+
+    mask-image: linear-gradient(
+        black 80%, 
+        transparent
+    );
+
+}

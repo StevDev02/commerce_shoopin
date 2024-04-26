@@ -1,0 +1,20 @@
+.img_bg-header-02 {
+    background-image: url('../../../../../public/images/03-header-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(
+        black 90%, 
+        transparent
+    );
+}
+
+.card {
+    backdrop-filter: blur(1px) saturate(98%);
+    -webkit-backdrop-filter: blur(1px) saturate(98%);
+    background-color: rgba(255, 255, 255, 0.52);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 300px;
+    height: 100px;
+}
