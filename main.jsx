@@ -4,8 +4,8 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import { ErrorPage } from './src/404/Error'
 import { App } from './src/App/App'
+import { ErrorPage } from './src/404/ErrorPage'
 
 const router = createBrowserRouter([
   {
