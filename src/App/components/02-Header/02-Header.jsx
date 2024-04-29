@@ -1,32 +1,49 @@
-function CardTime () {
+import './style.css/style.css'
+
+const infoButton = ['Comprar Ahora', 'Explorar Ofertas']
+
+function Buttons () {
   return (
     <>
-      <div className='text-2xl font-medium card flex items-center justify-center flex-col ml-10'>
-        <p className='text-3xl'><span className='ml-6'>23</span><span className='ml-6'>12</span><span span className='ml-6'>09</span></p>
-        <p><span className='ml-6'>HH</span><span className='ml-6'>MM</span><span span className='ml-6'>SS</span></p>
-      </div>
+      {infoButton.map((item, index) => (
+        <button
+          style={{ backgroundColor: index === 0 ? '#607f9ce3' : '#e8e8e8', color: index === 0 ? '#fff' : '#313131' }}
+          className='py-2 font-medium px-14 rounded-md text-[15px] ml-5 mb-4'
+          key={index}
+        >{item}
+        </button>
+      ))}
     </>
   )
 }
 
-export default CardTime
-
 export function Header02 () {
   return (
     <>
-      <section className='absolute top-[50%]  -right-[15%] -translate-x-[50%] -translate-y-[50%]   '>
-        <header>
-          <h2 className='text-4xl font-medium'>¡Ofertas de Verano!</h2>
-          <p className='text-xl'>Porque la lenceria es la pasion y llama de tu pareja.</p>
-          <br />
-          <h3 className='text-2xl font-medium'>Aprovecha nuestras ¡Ofertas!</h3>
-          <p className='text-xl'>¡Preparate para una experiencia en la que las<br /> compras sexi ganan!</p>
-          <br />
-          <p className='text-xl font-medium'>Una experiencia de compra limitada.</p>
-          <br />
-          <button className='py-2 font-medium px-14 rounded-md text-[15px] ml-5 mb-4 bg-[#e8e8e8]  '>Ver Ofertas</button>
-          <br /><br />
-          <CardTime />
+      <section className='absolute top-[55%] z-20 -right-[18%] -translate-x-[50%] -translate-y-[50%]   '>
+        <header className='text-center'>
+          <h2 className='text-5xl font-black text-[#000] text pb-6'>¡Llegaron las ofertas de<br /> verano!</h2>
+          <p className='text-base text-[#000] '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, <br /> Lorem ipsum dolor sit amet. </p>
+          <div className='mt-[70px] pb-10 '>
+            <Buttons />
+          </div>
+          <div>
+            <p className='cursor-pointer text-[12px] relative inline-block text-black'>*LAS OFERTAS
+              <span className='text__span'> TIENEN </span>
+              TIEMPO LIMITADO
+              <span className='text__span'> O HASTA </span>
+              GASTAR STOCK.
+              <span className='text__span'> NO </span>
+              SE PUEDE CANCELAR.
+            </p>
+            <br />
+            <p className='cursor-pointer text-[11px] text_Card relative inline-block'>
+              <span className='text__span'> MÁS </span>
+              INFORMACIÓN
+              <span className='text__span'> SOBRE </span>
+              NUESTRAS OFERTAS
+            </p>
+          </div>
         </header>
       </section>
     </>

@@ -18,10 +18,13 @@ const router = createBrowserRouter([
         element: <h3>Elementos </h3>
       }
     ]
-  },
-  {
+  }, {
     path: '/page',
     element: <h3>Aqui va una page </h3>
+  }, {
+    // Aqui va otra page
+    // path: '/oferta',
+    // element: <h3>¡Ofertas! </h3>
   }
 ])
 

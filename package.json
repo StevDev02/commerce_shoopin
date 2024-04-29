@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "4.2.1",
-    "css.gg": "^2.1.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "18.2.0",

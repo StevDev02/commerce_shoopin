@@ -1,12 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+ 
+
 .img_bg-header-02 {
-    background-image: url('../../../../../public/images/03-header-image.jpg');
-    background-position: center center;
+    background-image: url('https://s3.eu-central-1.amazonaws.com/commerce.sabata.almacenamiento/images/03-header-image.jpg');
+    background-position:  center center;
     background-repeat: no-repeat;
     background-size: cover;
-    mask-image: linear-gradient(
-        black 90%, 
-        transparent
-    );
 }
 
 .card {
@@ -17,4 +17,30 @@
     border: 1px solid rgba(209, 213, 219, 0.3);
     width: 300px;
     height: 100px;
+}
+
+.text_Card::after {
+
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: ease-in-out .3s;
+
+}
+
+.text_Card:hover::after {
+
+    height: 2px;
+
+}
+
+.text__span {
+
+    font-family: "Playfair Display", serif;
+    font-size: 10px;
+
 }

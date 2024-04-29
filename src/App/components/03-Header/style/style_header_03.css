@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+ 
+
+
+.img_bg_header_03 {
+    background-image: url('https://s3.eu-central-1.amazonaws.com/commerce.sabata.almacenamiento/images/image-landscape-fill-4fd1d483-d218-44fb-b829-ac04b5fac90a-default_0.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text_menu {
+    
+    transition: ease-in .3s;
+    font-family: "Playfair Display", serif;
+
+}
+
+.text_menu:hover::after {
+    height: 2px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.span__text {
+
+    font-family: "Playfair Display", serif;
+
+}
+
