@@ -7,6 +7,7 @@ import {
 import { App } from './src/App/App'
 import { ErrorPage } from './src/404/ErrorPage'
 import { Login } from './src/Login/Login'
+import { Register } from './src/Register/Register'
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         element: <Login />
       }, {
         path: 'register',
-        element: <h1>Register</h1>
+        element: <Register />
       }
     ]
 
