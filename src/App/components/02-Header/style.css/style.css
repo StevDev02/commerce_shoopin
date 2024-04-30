@@ -3,7 +3,7 @@
  
 
 .img_bg-header-02 {
-    background-image: url('https://s3.eu-central-1.amazonaws.com/commerce.sabata.almacenamiento/images/03-header-image.jpg');
+    background-image: url('../../../../../build/images/App/03-header-image.jpg');
     background-position:  center center;
     background-repeat: no-repeat;
     background-size: cover;

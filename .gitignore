@@ -22,3 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Video a Eliminar 
+build/videos/App/background_vide_home_page.mp4

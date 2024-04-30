@@ -3,14 +3,14 @@ import './style/Header_06.css'
 export function Footer () {
   return (
     <>
-      <footer class='z-20 text-[#000] absolute -translate-x-[0%] -translate-y-[50%] -bottom-[2%] left-[5%] '>
-        <div class='col'>
-          <img class='logo' src='images/ic_logo.png' alt='' />
+      <footer className='z-20 text-[#000] absolute -translate-x-[0%] -translate-y-[50%] -bottom-[2%] left-[5%] '>
+        <div className='col'>
+          <img className='logo' src='images/ic_logo.png' alt='' />
           <h4 className='font-black text-lg'>Contactos</h4>
           <p><strong>Dirección: </strong>Galo PI. Lasso y Pedro Carbono, Carapungo</p>
           <p><strong>Telefono: </strong>+593 99 920 3644</p>
           <p><strong>Horario: </strong>08:00 - 13:00, Lunes a Sabados</p>
-          <div class='follow'>
+          <div className='follow'>
             <h4 className='font-black text-lg'>Siguenos</h4>
             {/* <div class='icon'>
               <img src='images/footer/facebook.png' alt='' />
@@ -22,7 +22,7 @@ export function Footer () {
           </div>
         </div>
 
-        <div class='col'>
+        <div className='col'>
           <h4 className='font-black text-lg'>Acerca de</h4>
           <a className='links__a relative' href='#'>Sobre nosotros</a>
           <a className='links__a relative' href='#'>Información de entrega</a>
@@ -31,7 +31,7 @@ export function Footer () {
           <a className='links__a relative' href='#'>Contactanos</a>
         </div>
 
-        <div class='col fon'>
+        <div className='col fon'>
           <h4 className='font-black text-lg'>Mi cuenta</h4>
           <a className='links__a relative hover:text-[#000]  ' href='#'>Regístrate</a>
           <a className='links__a relative hover:text-[#000]' href='#'>Ver carrito</a>
@@ -40,17 +40,17 @@ export function Footer () {
           <a className='links__a relative hover:text-[#000]' href='#'>Ayuda</a>
         </div>
 
-        <div class='col install'>
+        <div className='col install'>
           <h4 className='font-black text-lg'>Descarga nuestra app</h4>
           <p>Desde App Store o Google Play</p>
-          <div class='row'>
+          <div className='row'>
             {/* <img src='images/footer/google-play.jpg' />
             <img src='images/footer/app-store.jpg' /> */}
           </div>
           <p>Pasarelas de pago seguras</p>
           <img src='images/footer/pagos-methd.png' alt='' />
         </div>
-        <div class='copyrigth'>
+        <div className='copyrigth'>
           <p>© 2024, Sabata etc - HTML CSS Ecommerce Page</p>
         </div>
       </footer>

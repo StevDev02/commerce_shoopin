@@ -15,7 +15,7 @@ export function HeaderText06 () {
       </div>
 
       <footer className=' '>
-        <div class='col z-20 -translate-x-[0%] absolute -translate-y-[50%] top-[50%] left-[10%]  '>
+        <div className='col z-20 -translate-x-[0%] absolute -translate-y-[50%] top-[50%] left-[10%]  '>
           <h4 className='font-black text-lg'>Colección de moda femenina</h4>
           <a className='text-[#000] links__a__e relative hover:text-[#2b2b2b] ' href='#'>Explora vestidos elegantes y versátiles</a>
           <a className='text-[#000] links__a__e relative hover:text-[#2b2b2b]' href='#'>Descubre las últimas tendencias</a>
@@ -28,7 +28,7 @@ export function HeaderText06 () {
           <div className='w-[150px] h-[150px] bg-[#75a04d] rounded-full circle__logo relative ' />
         </div> */}
 
-        <div class='col z-20 -translate-x-[0%] absolute -translate-y-[50%] top-[50%] left-[70%] text-center'>
+        <div className='col z-20 -translate-x-[0%] absolute -translate-y-[50%] top-[50%] left-[70%] text-center'>
           <h4 className='font-black text-lg'>Descubre quiénes somos</h4>
           <a className='text-[#000] links__a__e relative hover:text-[#2b2b2b] ' href='#'>Nuestra historia: Cómo empezó... </a>
           <a className='text-[#000] links__a__e relative hover:text-[#2b2b2b]' href='#'>Nuestro equipo: Conoce a las personas...</a>

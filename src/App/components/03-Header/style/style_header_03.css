@@ -3,7 +3,7 @@
 
 
 .img_bg_header_03 {
-    background-image: url('https://s3.eu-central-1.amazonaws.com/commerce.sabata.almacenamiento/images/image-landscape-fill-4fd1d483-d218-44fb-b829-ac04b5fac90a-default_0.jpg');
+    background-image: url('../../../../../build/images/App/04-foto-head.webp');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

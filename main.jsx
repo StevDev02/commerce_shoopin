@@ -6,26 +6,31 @@ import {
 } from 'react-router-dom'
 import { App } from './src/App/App'
 import { ErrorPage } from './src/404/ErrorPage'
+import { Login } from './src/Login/Login'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
+  }, {
+    path: '/ec',
     children: [
       {
-        path: '/elemento',
-        element: <h3>Elementos </h3>
+        path: 'Login',
+        element: <Login />
+      }, {
+        path: 'register',
+        element: <h1>Register</h1>
       }
     ]
+
   }, {
-    path: '/page',
-    element: <h3>Aqui va una page </h3>
+    path: '/tienda',
+    element: <h1>Tienda</h1>
   }, {
-    // Aqui va otra page
-    // path: '/oferta',
-    // element: <h3>¡Ofertas! </h3>
   }
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

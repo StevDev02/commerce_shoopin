@@ -26,14 +26,15 @@ export function App () {
           <HeroText />
         </section>
       </section>
+
       <main className='relative'>
 
         {/* <div className='z-10 bg-[#fafafa23] w-[100%] h-[100vh] fixed top-0 left-0 cursor-pointer' /> */}
 
         <section className=' w-[100%] h-[110vh] relative img_bg_header_one'>
-          <img className='img_header max-w-[40%] -mt-[125px] -top-[5%] absolute left-[24.2%] -translate-x-[50%] ' src='https://s3.eu-central-1.amazonaws.com/commerce.sabata.almacenamiento/images/01-foto-head.png' alt='' />
+          <img className='img_header max-w-[40%] -mt-[125px] -top-[5%] absolute left-[24.2%] -translate-x-[50%] ' loading='lazy' src='../../build/images/App/01-foto-head.png' alt='' />
           <TextHeader />
-          <img className='img_header  max-w-[34%] -mt-[125px] top-[15%] absolute left-[80%] -translate-x-[50%] ' src='https://s3.eu-central-1.amazonaws.com/commerce.sabata.almacenamiento/images/02-foto-head.png' alt='' />
+          <img className='img_header  max-w-[34%] -mt-[125px] top-[15%] absolute left-[80%] -translate-x-[50%] ' loading='lazy' src='../../build/images/App/02-foto-head.png' alt='' />
         </section>
 
         <section className='w-[100%] h-[110vh] relative mt-[0px] img_bg-header-02'>
@@ -46,7 +47,7 @@ export function App () {
 
         <section className='w-[100%] relative h-[110vh] img_bg_header_04'>
           <HeaderVideo04 />
-          <img className='img_header max-w-[45%] -z-0 opacity-90 top-[35%] absolute left-[75%] -translate-y-[50%] -translate-x-[50%] ' src='https://i.ibb.co/M2wcYPd/prueba1.png' alt='' />
+          <img className='img_header max-w-[45%] -z-0 opacity-90 top-[35%] absolute left-[75%] -translate-y-[50%] -translate-x-[50%] ' loading='lazy' src='../../build/images/App/05-foto-head.png' alt='' />
         </section>
 
         <section className='w-[100%] h-[260vh] relative img_bg_header_06'>
