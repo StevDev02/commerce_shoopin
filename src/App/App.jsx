@@ -57,9 +57,6 @@ export function App () {
         <Footer />
       </main>
 
-      {/* <div id='detail'>
-        <Outlet />
-      </div> */}
     </>
   )
 }
