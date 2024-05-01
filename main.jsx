@@ -9,6 +9,7 @@ import { ErrorPage } from './src/404/ErrorPage'
 import { Login } from './src/Login/Login'
 import { Register } from './src/Register/Register'
 import { Shop } from './src/Shop/Shop'
+import { Tacones } from './src/Shop/subpages/Tacones/Tacones'
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'tacones',
-        element: <h1>Tacones</h1>
+        element: <Tacones />
       }, {
         path: 'blusas',
         element: <h1>Blusas</h1>
