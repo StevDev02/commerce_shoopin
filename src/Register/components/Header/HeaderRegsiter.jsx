@@ -20,9 +20,9 @@ function IconAlert () {
 function HeaderTextRegister () {
   return (
     <>
-      <div className='relative'>
-        <h2 className='font-semibold text-center text-4xl -leading-5 pb-12'>Registrate y unete<br />
-          a la comunidad de Sabata
+      <div className='relative -mt-32'>
+        <h2 className='font-semibold text-center text-4xl -leading-5 pb-12'>Registrate y unete a<br />
+          la comunidad de Sabata
         </h2>
         <div className=' ml-24 flex'>
           <p className='text-sm text-center'>Si ya te registraste, puedes </p>
@@ -31,6 +31,14 @@ function HeaderTextRegister () {
         <p className='text-sm ml-32'>Y navega en nuestra comunidad.</p>
         <div className='bg_text_login -z-0' />
         <div className='bg_text_login2 -z-0' />
+        <div className='flex items-center justify-center gap-2 pt-5 pb-5'>
+          <div className='w-[120px] h-[1px] bg-[#00000018] ' /> <label className='text-xs text-[#00000080] '>O registrate con</label><div className='w-[120px] h-[1px] bg-[#00000018] ' />
+        </div>
+        <div className='flex items-center justify-center gap-5'>
+          <img className=' border rounded-lg px-6 py-2 ' src={google} alt='' />
+          <img className=' border rounded-lg px-6 py-2' src={iphone} alt='' />
+          <img className=' border rounded-lg px-6 py-2' src={facebook} alt='' />
+        </div>
       </div>
     </>
   )
@@ -39,8 +47,10 @@ function HeaderTextRegister () {
 function HeaderForm () {
   return (
     <>
-      <form className='grid text-xs gap-4 text-zinc-600' action=''>
+      <form className='grid text-xs gap-4 text-zinc-600 pt-10' action=''>
         <h2 className='text-base font-extralight text-black'>DATOS PERSONALES</h2>
+
+        {/* Correo de usuario */}
         <input
           type='email'
           placeholder='EMAIL'
@@ -52,6 +62,7 @@ function HeaderForm () {
           <IconAlert />
         </div>
 
+        {/* Contraseña de usuario */}
         <input
           type='password'
           placeholder='CONTRASEÑA'
@@ -61,15 +72,65 @@ function HeaderForm () {
           <p className='text-[9px] ml-[17px] -mt-[0px] text-red-500 '>Este campo es obligatorio.</p>
           <IconAlert />
         </div>
-        <div className='px-5 -ml-4 flex items-center justify-center gap-5 mt-10'>
-          <img className=' border px-7 rounded-lg py-2 w-[30%] ' src={google} alt='' />
-          <img className=' border px-7 rounded-lg py-2 w-[30%] ' src={iphone} alt='' />
-          <img className=' border px-7 rounded-lg py-2 w-[30%] ' src={facebook} alt='' />
+
+        {/* Nombre de usuario */}
+        <input
+          type='text'
+          placeholder='NOMBRE'
+          className='inputLogin bg-transparent pt-1 w-[300px] h-[45px] pr-2 focus:outline-none border border-r-transparent border-l-transparent border-t-transparent border-b-zinc-300'
+        />
+        <div className='-mt-3'>
+          <p className='text-[9px] ml-[17px] -mt-[0px] text-red-500 '>Este campo es obligatorio.</p>
+          <IconAlert />
+        </div>
+
+        {/* Apellido de usuario */}
+        <input
+          type='text'
+          placeholder='APELLIDO'
+          className='inputLogin bg-transparent pt-1 w-[300px] h-[45px] pr-2 focus:outline-none border border-r-transparent border-l-transparent border-t-transparent border-b-zinc-300'
+        />
+        <div className='-mt-3'>
+          <p className='text-[9px] ml-[17px] -mt-[0px] text-red-500 '>Este campo es obligatorio.</p>
+          <IconAlert />
+        </div>
+
+        {/* Numero de usuario */}
+        <input
+          type='number'
+          placeholder='TELEFONO'
+          className='inputLogin bg-transparent pt-1 w-[300px] h-[45px] pr-2 focus:outline-none border border-r-transparent border-l-transparent border-t-transparent border-b-zinc-300'
+        />
+        <div className='-mt-3'>
+          <p className='text-[9px] ml-[17px] -mt-[0px] text-red-500 '>Este campo es obligatorio.</p>
+          <IconAlert />
+        </div>
+
+        {/* Aceptar Comerciales */}
+        <div className='flex items-center gap-1 pt-3'>
+          <input
+            type='checkbox'
+            className='w-[14px] h-[14px]'
+          />
+          <div className=''>
+            <p className='text-[10px] ml-[5px] mt-[12px] text-[#000000b7] '>Quiero recibir comunicaciones comerciales personalizadas de <br /><span className='text-black'>SABATA</span> a través del email.</p>
+          </div>
+        </div>
+
+        {/* Politicas de usuario */}
+        <div className='flex items-center gap-1'>
+          <input
+            type='checkbox'
+            className='w-[14px] h-[14px]'
+          />
+          <div className=''>
+            <p className='text-[10px] ml-[5px] mt-[2px] text-[#000000b7] '>He podido leer y entiendo la <span className='underline'>Política de Privacidad y Cookies</span></p>
+          </div>
         </div>
 
         <div />
 
-        <button className='w-[300px] border py-2 rounded-sm border-zinc-500 hover:text-zinc-400 mt-3'>INICIAR SESION</button>
+        <button className='w-[300px] border py-2 rounded-sm border-zinc-500 hover:text-zinc-400 mt-3'>CREAR CUENTA</button>
 
       </form>
 

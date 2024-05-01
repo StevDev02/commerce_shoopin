@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import './../../styles/Nav.css'
 import { LogoNav } from './Logo'
 import { IconsNav } from './Icos'
-import { linksNav } from '../const/contsNav'
 
 export function NavHeader () {
   return (
@@ -10,9 +9,12 @@ export function NavHeader () {
       <nav className='flex items-center justify-between px-10'>
         <LogoNav />
         <ul className=' flex items-center justify-between p-1 gap-7  '>
-          {linksNav.slice(1, 5).map((link, index) => (
-            <Link className='hover:bg-[#00000046] py-1 px-2 rounded-md  ' key={index}>{link} </Link>
-          ))}
+          <li className='flex gap-10 '>
+            <Link to='/ec/shop/' className='link_login' href=''>Tienda</Link>
+            <Link to='/' className='link_login' href=''>Accesorios</Link>
+            <Link className='link_login' href=''>Ofertas</Link>
+            <Link className='link_login' href=''>Contacto</Link>
+          </li>
         </ul>
         <IconsNav />
       </nav>

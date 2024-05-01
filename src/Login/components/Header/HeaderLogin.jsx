@@ -22,14 +22,14 @@ function HeaderTextLogin () {
   return (
     <>
       <div className='relative'>
-        <h2 className='font-semibold text-4xl -leading-5 pb-12'>Inicia sesión en<br />
+        <h2 className='font-semibold text-center text-4xl -leading-5 pb-12'>Inicia sesión en<br />
           Sabata directamente
         </h2>
-        <div className='flex'>
+        <div className='flex ml-7'>
           <p className='text-sm'>Si no tienes una cuenta, puedes </p>
-          <Link to='/' className='z-10 ml-1 text-[#ef7674] text-sm cursor-pointer '> Registrarte aquí.</Link>
+          <Link to='/ec/register' className='z-10 ml-1 text-[#ef7674] text-sm cursor-pointer '> Registrarte aquí.</Link>
         </div>
-        <p className='text-sm'>Y unete a nuestra comunidad.</p>
+        <p className='text-center text-sm'>Y unete a nuestra comunidad.</p>
         <div className='bg_text_login -z-0' />
         <div className='bg_text_login2 -z-0' />
       </div>
@@ -40,7 +40,7 @@ function HeaderTextLogin () {
 function HeaderForm () {
   return (
     <>
-      <form className='grid text-xs gap-4 text-zinc-600' action=''>
+      <form className='grid text-xs gap-4 text-zinc-600 pt-10' action=''>
         <h2 className='text-base font-extralight text-black'>ACCEDE A TU CUENTA</h2>
         <input
           type='email'
@@ -62,15 +62,19 @@ function HeaderForm () {
           <p className='text-[9px] ml-[17px] -mt-[0px] text-red-500 '>Este campo es obligatorio.</p>
           <IconAlert />
         </div>
-        <div className='px-5 -ml-4 flex items-center justify-center gap-5 mt-10'>
-          <img className=' border px-7 rounded-lg py-2 w-[30%] ' src={google} alt='' />
-          <img className=' border px-7 rounded-lg py-2 w-[30%] ' src={iphone} alt='' />
-          <img className=' border px-7 rounded-lg py-2 w-[30%] ' src={facebook} alt='' />
-        </div>
 
         <div />
 
         <button className='w-[300px] border py-2 rounded-sm border-zinc-500 hover:text-zinc-400 mt-3'>INICIAR SESION</button>
+
+        <div className='flex items-center justify-center gap-2 pt-5 pb-5'>
+          <div className='w-[110px] h-[1px] bg-[#00000018] ' /> <label className='text-xs text-[#00000080] '>O inicia con</label><div className='w-[110px] h-[1px] bg-[#00000018] ' />
+        </div>
+        <div className='flex items-center justify-center gap-5'>
+          <img className=' border rounded-lg px-6 py-2 ' src={google} alt='' />
+          <img className=' border rounded-lg px-6 py-2' src={iphone} alt='' />
+          <img className=' border rounded-lg px-6 py-2' src={facebook} alt='' />
+        </div>
 
       </form>
 

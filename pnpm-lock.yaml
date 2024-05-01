@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '22':
+        specifier: ^0.0.0
+        version: 0.0.0
       '@vitejs/plugin-react':
         specifier: 4.2.1
         version: 4.2.1(vite@5.2.10)
@@ -50,6 +53,9 @@ importers:
         version: 1.5.2
 
 packages:
+
+  22@0.0.0:
+    resolution: {integrity: sha512-MdBPNDaCFY4fZVpp14n3Mt4isZ2yS1DrIiOig/iMLljr4zDa0g/583xf/lFXNPwhxCfGKYvyWJSrYyS8jNk2mQ==}
 
   '@aashutoshrathi/word-wrap@1.2.6':
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
@@ -2090,6 +2096,8 @@ packages:
     engines: {node: '>=12.20'}
 
 snapshots:
+
+  22@0.0.0: {}
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
 
